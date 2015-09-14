@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta property="og:title" content="">
+	    <meta property="og:description" content="">
+	    <meta property="og:url" content="">
+	    <meta property="og:image" content="">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	    <link rel="stylesheet" href="style.css">
+	    <script language="javascript" charset="UTF-8" src="CoreJSBrige.js"></script>
+	    <script language="javascript" charset="UTF-8" src="test.js"></script>
+<!--	    <script language="javascript">-->
+<!--            var bb = 9990;-->
+<!--            //测试 数据查询和UI加载弹出-->
+<!--            function myJsbrige_DataQuery()-->
+<!--            {-->
+<!--            	var account = document.getElementById('account').value;-->
+<!--            	var password = document.getElementById('password').value;-->
+<!--            	if(account && password)-->
+<!--            	{-->
+<!--                    var param = {accoutn:account,password:password};-->
+<!--            		var param = JSON.stringify(param);-->
+<!---->
+<!--	            	var nativeServiceRequest =-->
+<!--	                {-->
+<!--	                    serviceType:nativeFunctionType.DeviceService,-->
+<!--	                    serviceName:"Data_Login_Check"-->
+<!--	                }-->
+<!--	                window.coreJSBrige.creatMessage(nativeServiceRequest,param,"registerTest",1)-->
+<!--            	}-->
+<!--            }-->
+<!---->
+<!--        	function myJsbrigeLink1()-->
+<!--            {-->
+<!--                var account = document.getElementById('')-->
+<!--                var nativeServiceRequest =-->
+<!--                {-->
+<!--                    serviceType:nativeFunctionType.DeviceService,-->
+<!--                    serviceName:"Device_Camera"-->
+<!--                }-->
+<!--                window.coreJSBrige.creatMessageNoData(nativeServiceRequest,"registerTest",1)-->
+<!--                -->
+<!--            }-->
+<!--	        var registerTestFun = function returnFunction(bs)-->
+<!--	        {-->
+<!--	            alert(bs);-->
+<!--	            bb = 8888;-->
+<!--	            return "bcdddddddd"-->
+<!--	        }-->
+<!--	        //registerTestFun();-->
+<!--	        window.coreJSBrige.registerJsService("registerTest",registerTestFun)-->
+<!--        </script>-->
+
+	</head>
+<body >
+	<header class="ba ha">
+		<div id =-"Button" class="lf">
+			<a href="index.html">Back</a>
+		</div>
+		UI Show
+		<div id =-"rightButton" class="rg">
+			
+		</div>
+	</header>
+	<div id ="body" class="bd">
+		<div id = "login" class = "login">
+			<div class = "ins">
+				e-mail:<input type="text" id="account" name = "e-Mail" class ="inp" placeholder = "邮箱"/></br>
+			</div>
+			<div class = "ins">
+				passWord:<input type="password" id="password" name = "password" class="inp" placeholder = "密码"/>
+			</div>
+			<div class = "bu">
+				<input type="Button" name = "login" value = "login" class="bus" onclick="myJsbrigeDataQuery()"/>
+
+			</div>
+		</div>
+	</div>
+	<footer class="ft ba">
+	</footer>
+</body>
+</html>

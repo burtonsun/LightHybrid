@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Mobile基本页面结构</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="jquery.mobile-1.4.5.css"/>
+        <script  src="jquery.js"></script>
+        <!-- // <script type="text/javascript" src="jquery.mobile-1.4.5.js"></script> -->
+        <script  src="jquery.mobile-1.4.5.min.js"></script>
+        
+    </head>
+    <body>
+    	<section id = "page1" data-role = "page">
+            <header data-role = "header">
+                <h1>
+                    jQuery Mobile2
+                </h1>
+            </header>
+            <div data-role = "content" class = "content">
+                this is first page222
+                <p>
+                    <a href =" #page2" data-transition ="slide">link to 2 page</a> 
+                </p>
+            </div>
+            <footer data-role = "footer" >
+                test footer
+            </footer>
+        </section>
+    </body>
+</html>

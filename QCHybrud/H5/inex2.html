@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Mobile基本页面结构</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="jquery.mobile-1.4.5.css"/>
+        <script  src="jquery.js"></script>
+        <!-- // <script type="text/javascript" src="jquery.mobile-1.4.5.js"></script> -->
+        <script  src="jquery.mobile-1.4.5.min.js"></script>
+        <script>
+        $(function(){
+            $("#page1").bind("swipeleft",function(){
+                $.mobile.changePage("#page2");
+            });
+            $("#bb").bind("swiperight",function(){
+                $.mobile.changePage("#page1", {transition:"slide",reverse:true}, true, true);
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <!-- <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Header</h1>
+            </div>
+            <div data-role="content">
+                <p>Content goes here</p>
+            </div>
+            <div data-role="footer">
+                <h4>Footer</h4>
+            </div>
+        </div> -->
+
+        <section id = "page1" data-role = "page" data-add-back-btn="true">
+            <header data-role = "header">
+                <h1>
+                    jQuery Mobile
+                </h1>
+            </header>
+            <div data-role = "content" class = "content">
+                this is first page
+                <p>
+                    <a href ="#page2" data-transition ="slide">link to 2 page</a> 
+                </p>
+            </div>
+            <footer data-role = "footer" >
+                test footer
+            </footer>
+        </section>
+        <section id = "page2" data-role = "page" data-add-back-btn = "true">
+            <header data-role = "header">
+                <h1>
+                    jQuery Mobile
+                </h1>
+            </header>
+            <div data-role = "content" class = "content" id = "bb">
+                this is first page
+                <p>
+                    <a href =" #page1" data-transition ="slide" data-direction = "reverse">link to 1 page</a> 
+                    <a  data-rel = "back"> ddddd</a>
+                </p>
+            </div>
+            <footer data-role = "footer" >
+                test footer
+            </footer>
+        </section>
+    </body>
+</html>
